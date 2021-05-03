@@ -11,12 +11,12 @@ The project includes extra packages and improved file structure.
 -   redux-saga
 -   redux-devtools-extension
 -   react-router-dom
+-   react-router-redux
 
 ## Public API 🖼
 
 This project gets its data from Artic EDU (The Art Institute of Chicago) for demo purposes, it's an open API and doesn't require a key.
 View its documentation at [Art Institute of Chicago API](https://api.artic.edu/docs/)
-Public API URL can be changed from the .env file or config.ts.
 **More Public API's can be found [here](https://github.com/public-apis/public-apis#music).**
 
 ## Features 🦸
@@ -31,7 +31,7 @@ Public API URL can be changed from the .env file or config.ts.
 
 ## Routes 🛣
 
-> Project's main modules
+Project's main modules
 
 -   Home page
     > Shows the fetched posts, fetched posts are limited to 20, pagination is should be implemented to fetch more, also, images should be lazy-loaded.
@@ -62,7 +62,7 @@ Public API URL can be changed from the .env file or config.ts.
         - scripts
             - axios.ts
             - test-utils.js
-            - utils.ts // now it only contains the Logger class
+            - utils.ts
         - styles
             - abstracts
                 - mixins.scss
@@ -144,4 +144,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-# Stay safe 😷
+## `Stay safe 😷`
