@@ -1,17 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+import store from './store';
+import App from './App';
+import './lib/styles/main.scss';
+
+/**
+ * Scroll to top when changing route
+ * Pass preventScrollToTop as location parameter to disable this => { preventScrollToTop: true }
+ */
+const ScrollToTop: React.FC<{ history: { location: { preventScrollToTop?: boolean } } }> = (props) => {
+    if (!props.history.location.preventScrollToTop) {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    return null;
+};
+
+const app = (
+    <React.StrictMode>
+        <Provider store={store}>
+            <BrowserRouter basename='/'>
+                <Route component={ScrollToTop} />
+                <App />
+            </BrowserRouter>
+        </Provider>
+    </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(app, document.getElementById('root'));

@@ -1,0 +1,44 @@
+@import '../../lib/styles/abstracts/variables.scss';
+@import '../../lib/styles/abstracts/mixins.scss';
+
+.post-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 1rem;
+
+    @include sm {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+    &__inner {
+    }
+
+    &__img-wrapper {
+        display: block;
+        margin-bottom: 1.75rem;
+        overflow: hidden;
+        line-height: 0;
+    }
+    &__img {
+        will-change: transform;
+        transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    &__link:hover &__img {
+        transform: scale(1.1);
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+    }
+    &__text {
+        font-size: 0.875rem;
+    }
+}

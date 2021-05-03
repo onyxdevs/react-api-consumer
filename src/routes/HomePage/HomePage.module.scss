@@ -1,0 +1,49 @@
+@import '../../lib/styles/abstracts/variables.scss';
+@import '../../lib/styles/abstracts/mixins.scss';
+
+.posts {
+    display: block;
+
+    &__items {
+        width: calc(100% + 2rem);
+        display: flex;
+        flex-wrap: wrap;
+        margin: -1rem;
+
+        > div {
+            margin-bottom: 1.5rem;
+
+            @include sm {
+                margin-bottom: 3rem;
+            }
+        }
+        > div:nth-child(4n + 1) a {
+            margin-right: 16%;
+        }
+        > div:nth-child(4n + 2) a {
+            margin-top: 2%;
+            margin-left: 12%;
+
+            @include sm {
+                margin-top: 14%;
+            }
+        }
+        > div:nth-child(4n + 3) a {
+            margin-top: 6%;
+            margin-right: 12%;
+
+            @include sm {
+                margin-top: 16%;
+            }
+        }
+        > div:nth-child(4n + 4) a {
+            margin-left: 8%;
+        }
+    }
+
+    &__note {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,12 @@
+.error {
+    text-align: center;
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    &__code {
+        line-height: 1;
+        font-size: 14rem;
+    }
+}
