@@ -13,7 +13,7 @@ export interface IPostItem {
 }
 
 const PostItem: React.FC<IPostItem> = ({ data }: IPostItem) => {
-    if (!(data && data.id && data.title && data.imageId)) return null;
+    if (!data || !(data && data.id && data.title && data.imageId)) return null;
 
     const { id, title, imageId, dateText } = data;
 
