@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
 
+import reportWebVitals from './reportWebVitals';
 import store from './store';
 import App from './App';
 import './lib/styles/main.scss';
@@ -31,3 +32,5 @@ const app = (
 );
 
 ReactDOM.render(app, document.getElementById('root'));
+
+reportWebVitals();
