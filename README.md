@@ -1,9 +1,9 @@
-# API Consumer 🚀
+# React.js API Consumer 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).<br />
 The project includes extra packages and improved file structure.
 
-## Dependencies that was added to CRA 👷🏼‍♀️
+## Dependencies that were added to CRA 👷🏼‍♀️
 
 -   axios
 -   redux
