@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-interface IErrorHandlerProps {}
-interface IErrorHandlerState {
+type ErrorHandlerProps = {};
+type ErrorHandlerState = {
     error: boolean;
-}
+};
 const withErrorHandler = (WrappedComponent: React.ComponentType) => {
-    return class extends Component<IErrorHandlerProps, IErrorHandlerState> {
+    return class extends Component<ErrorHandlerProps, ErrorHandlerState> {
         constructor(props: {}) {
             super(props);
             this.state = {

@@ -1,2 +1,2 @@
 export { default } from './PostItem';
-export type IPostItem = import('./PostItem').IPostItem;
+export type PostItemProps = import('./PostItem').PostItemProps;

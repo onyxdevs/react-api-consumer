@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 
 import styleClasses from './PostItem.module.scss';
 
-export interface IPostItem {
+export type PostItemProps = {
     data: {
         id: string | number;
         title: string;
         imageId: string;
         dateText: string;
     };
-}
+};
 
-const PostItem: React.FC<IPostItem> = ({ data }: IPostItem) => {
+const PostItem: React.FC<PostItemProps> = ({ data }: PostItemProps) => {
     if (!data || !(data && data.id && data.title && data.imageId)) return null;
 
     const { id, title, imageId, dateText } = data;

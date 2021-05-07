@@ -2,16 +2,16 @@ import { connect } from 'react-redux';
 
 import * as actions from './actions';
 
-interface IHomePage {
+type HomePageProps = {
     posts: {
         data: [];
         note: string;
         status: string;
         error: string;
     };
-}
+};
 
-const mapState = (state: IHomePage) => ({
+const mapState = (state: HomePageProps) => ({
     data: state.posts.data,
     note: state.posts.note,
     status: state.posts.status,

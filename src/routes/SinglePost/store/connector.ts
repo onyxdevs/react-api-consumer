@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 
 import * as actions from './actions';
 
-interface ISinglePost {
+type SinglePostProps = {
     post: {
         data: {
             id: string;
@@ -22,9 +22,9 @@ interface ISinglePost {
         status: string;
         error: string;
     };
-}
+};
 
-const mapState = (state: ISinglePost) => ({
+const mapState = (state: SinglePostProps) => ({
     data: state.post.data,
     note: state.post.note,
     status: state.post.status,

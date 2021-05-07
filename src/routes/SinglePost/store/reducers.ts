@@ -8,16 +8,16 @@ export const initialState = {
     error: ''
 };
 
-interface IPostReducerAction {
+type PostReducerAction = {
     type: string;
     data: object;
     note: string;
     error: {
         message: string;
     };
-}
+};
 
-const postReducer = (state = initialState, action: IPostReducerAction) => {
+const postReducer = (state = initialState, action: PostReducerAction) => {
     const actions: {
         [key: string]: () => {};
     } = {

@@ -3,7 +3,7 @@ import { ConnectedProps } from 'react-redux';
 
 import connector from './store/connector';
 import CircularProgress from 'components/CircularProgress';
-import PostItem, { IPostItem } from 'components/PostItem';
+import PostItem, { PostItemProps } from 'components/PostItem';
 import styleClasses from './HomePage.module.scss';
 
 type HomePageReduxProps = ConnectedProps<typeof connector>;
@@ -23,7 +23,7 @@ const HomePage: React.FC<HomePageReduxProps> = (props: HomePageReduxProps) => {
                 <div className={styleClasses['posts__items']}>
                     {!!data &&
                         data.length &&
-                        data.map((item: IPostItem['data']) => <PostItem key={item.id} data={item} />)}
+                        data.map((item: PostItemProps['data']) => <PostItem key={item.id} data={item} />)}
                 </div>
                 <h5 className={styleClasses['posts__note']}>{note}</h5>
             </div>
