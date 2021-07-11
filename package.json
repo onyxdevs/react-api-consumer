@@ -1,6 +1,11 @@
 {
     "name": "api-consumer",
     "version": "0.1.0",
+    "author": {
+        "name": "Obada Qawwas",
+        "email": "info@onyxdev.net",
+        "url": "https://onyxdev.net"
+    },
     "private": true,
     "dependencies": {
         "axios": "^0.21.1",

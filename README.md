@@ -65,8 +65,8 @@ Project's main modules
             - utils.ts
         - styles
             - abstracts
-                - mixins.scss
-                - variables.scss
+                - _mixins.scss
+                - _variables.scss
             - main.scss
 
     - routes // main modules, which are react components and might have a redux store
