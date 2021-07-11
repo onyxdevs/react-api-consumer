@@ -1,11 +1,12 @@
 {
     "name": "api-consumer",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "author": {
         "name": "Obada Qawwas",
         "email": "info@onyxdev.net",
         "url": "https://onyxdev.net"
     },
+    "homepage": "https://onyxdev.net/files/battlefield/react/react-api-consumer/",
     "private": true,
     "dependencies": {
         "axios": "^0.21.1",
