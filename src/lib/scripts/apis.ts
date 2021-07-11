@@ -1,5 +1,5 @@
 import axios from 'lib/scripts/axios';
-import config from './config';
+import config from '../../config';
 
 type resDataType = {
     info: {

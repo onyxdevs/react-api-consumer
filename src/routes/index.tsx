@@ -7,10 +7,10 @@ const AsyncErrorPage = React.lazy(() => import('./ErrorPage'));
 
 const Routes = () => (
     <Switch>
-        <Route path='/posts/:id'>
+        <Route path="/posts/:id">
             <AsyncSinglePost />
         </Route>
-        <Route path='/' exact>
+        <Route path="/" exact>
             <AsyncHomePage />
         </Route>
         <Route>

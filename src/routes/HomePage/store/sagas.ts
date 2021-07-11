@@ -1,7 +1,7 @@
 import { put } from 'redux-saga/effects';
 
 import { setPosts, fetchPostsFailed } from './actions';
-import api from 'apis';
+import api from 'lib/scripts/apis';
 import { logger } from 'lib/scripts/utils';
 
 export function* initPostsSaga(): any {

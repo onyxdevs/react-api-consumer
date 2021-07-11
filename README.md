@@ -60,6 +60,7 @@ Project's main modules
 
     - lib // helpers
         - scripts
+            - apis.ts // contains all the API calls
             - axios.ts
             - test-utils.js
             - utils.ts
@@ -91,7 +92,6 @@ Project's main modules
             - index.ts
         - index.tsx // contains the main React Router DOM routes, new routes must be added here
 
-    - apis.ts // contains all the API calls
     - App.test.tsx
     - App.tsx
     - config.ts // App's config, now it only contains API_URL and POSTS_LIMIT

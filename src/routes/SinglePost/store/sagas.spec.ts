@@ -1,7 +1,7 @@
 import { runSaga } from 'redux-saga';
 import { initPostSaga } from './sagas';
 import { setPost, fetchPostFailed } from './actions';
-import api from 'apis';
+import api from 'lib/scripts/apis';
 
 describe('testing SinglePost sagas', () => {
     it('should be called once and dispatch setPost action', async () => {

@@ -1,7 +1,7 @@
 import { runSaga } from 'redux-saga';
 import { initPostsSaga } from './sagas';
 import { setPosts, fetchPostsFailed } from './actions';
-import api from 'apis';
+import api from 'lib/scripts/apis';
 
 describe('testing HomePage sagas', () => {
     it('should be called once and dispatch setPosts action', async () => {

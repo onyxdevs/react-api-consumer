@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
 
+import config from './config';
 import reportWebVitals from './reportWebVitals';
 import store from './store';
 import App from './App';
@@ -23,7 +24,7 @@ const ScrollToTop: React.FC<{ history: { location: { preventScrollToTop?: boolea
 const app = (
     <React.StrictMode>
         <Provider store={store}>
-            <BrowserRouter basename='/'>
+            <BrowserRouter basename={config.APP_BASE}>
                 <Route component={ScrollToTop} />
                 <App />
             </BrowserRouter>
